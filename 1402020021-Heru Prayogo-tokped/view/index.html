@@ -95,17 +95,17 @@
             <div class="col-sm-5"" style="margin: 5px;">
                 <h3 style="padding-bottom: 15px;">Top Up dan Tagihan</h3>
                 <div class="row" style="text-align: center;">
-                    <div class="col-sm-3 content-nav">
+                    <div class="col-sm-3 content-nav" id="kat-pulsa">
                         Pulsa
                     </div>
-                    <div class="col-sm-3 content-nav">
+                    <div class="col-sm-3 content-nav" id="kat-paket-data">
                         Paket
                     </div>
                     <div class="col-sm-3 content-nav">
-                        Listrik
+                        Listrik PLN
                     </div>
                     <div class="col-sm-3 content-nav">
-                        PLN
+                        Flight
                     </div>
                 </div>
                 <div class="row" style="flex: 1 1 auto;">
@@ -113,20 +113,45 @@
                         <label for="">
                             Nomor Telpon
                         </label>
-                        <input type="text" class="pulsa" placeholder="0812345678">
+						<input id="nomorhp" type="text" class="form-control w-100" placeholder="0898989898989">
                     </div>
                     <div class="col-sm-5">
                         <label for="">
                             Nominal
                         </label>
-                        <input type="text" class="pulsa" disabled>
+						<select id="hargapulsa" class="pulsa" style="color: #929292;" disabled>
+
+                                    <option value="0">Pilih</option>
+                                    <option value="1000">Rp. 1.000</option>
+                                    <option value="3000">Rp. 3.000</option>
+                                    <option value="5000">Rp. 5.000</option>
+                                    <option value="10000">Rp. 10.000</option>
+                                    <option value="15000">Rp. 15.000</option>
+                                    <option value="20000">Rp. 20.000</option>
+                                    <option value="25000">Rp. 25.000</option>
+                                    <option value="50000">Rp. 50.000</option>
+                                    <option value="100000">Rp. 100.000</option>
+
+                           </select>
+						   <select id="hargapaket" class="pulsa" style="color: #929292;" disabled hidden>
+
+                                    <option value="0">Pilih</option>
+                                    <option value="30500">Rp. 30.500</option>
+                                    <option value="43000">Rp. 43.000</option>
+                                    <option value="20000">Rp. 20.000</option>
+                                    <option value="70000">Rp. 70.000</option>
+
+                           </select>
                     </div>
-                    <div class="col-sm-2" style="margin-top: 25px;">
-                        <button class="medium-header-fill-grey">Beli</button>
-                    </div>
+                    <button  id="hargabtn1" class="btn px-3" style="background-color: #4950572e; color: #929292; font-family: 'Open Sans', sans;" disabled>Beli</button>
+                    <button  id="hargabtn2" class="btn px-3" style="background-color: #4950572e; color: #929292; font-family: 'Open Sans', sans;" disabled hidden>Beli</button>
+					</div>
                 </div>
-			</div>
+               </div>
+             </div>
 		</div>
 	</div>
     </body>
 </html>
+
+<script text="javascript" src="../JS/script.js"></script>
